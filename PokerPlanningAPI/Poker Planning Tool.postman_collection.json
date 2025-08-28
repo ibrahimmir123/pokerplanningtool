@@ -1,0 +1,268 @@
+{
+	"info": {
+		"_postman_id": "7ccc23a9-4aa9-4e88-8be1-5f0ff800469b",
+		"name": "Poker Planning Tool",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46800213",
+		"_collection_link": "https://ibrahim-6860645.postman.co/workspace/ibrahim's-Workspace~fa8b7f41-57f0-4be5-86d6-6557fb024c09/collection/46800213-7ccc23a9-4aa9-4e88-8be1-5f0ff800469b?action=share&source=collection_link&creator=46800213"
+	},
+	"item": [
+		{
+			"name": "Session Management",
+			"item": [
+				{
+					"name": "Create Session",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Sprint Planning - Team Alpha\",\r\n  \"deckType\": \"Fibonacci\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/session/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"session",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Join Session",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Sprint Planning - Team Alpha\",\r\n  \"deckType\": \"Fibonacci\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/session/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"session",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Story",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Implement login feature\",\r\n  \"description\": \"Allow users to log in using email and password\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/session/09542b52-d6df-44d7-9a6f-c58294b7d5b7user-story",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"session",
+								"09542b52-d6df-44d7-9a6f-c58294b7d5b7user-story"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy Session",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/session/destroy/30fdfefb-62ad-4666-8f78-c9c91c392688",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"session",
+								"destroy",
+								"30fdfefb-62ad-4666-8f78-c9c91c392688"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vote Management",
+			"item": [
+				{
+					"name": "Start Voting",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/votes/start/8bc36350-51fb-43c2-a717-a371dc208fe5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"votes",
+								"start",
+								"8bc36350-51fb-43c2-a717-a371dc208fe5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Emit Voting",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/votes/start/8bc36350-51fb-43c2-a717-a371dc208fe5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"votes",
+								"start",
+								"8bc36350-51fb-43c2-a717-a371dc208fe5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listen Votation Status",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Finish Voting",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/votes/finish/b2cb7dc5-a279-466c-8054-8b4dbc2a66bc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"votes",
+								"finish",
+								"b2cb7dc5-a279-466c-8054-8b4dbc2a66bc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Stories Management",
+			"item": [
+				{
+					"name": "Add Stories",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"636fd248-31c9-4633-b3b9-c6adb986cb54\",\r\n  \"description\": \"Implement login feature\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/userstories/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"userstories",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Of Stories",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User Story",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/userstories/delete/636fd248-31c9-4633-b3b9-c6adb986cb54",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"userstories",
+								"delete",
+								"636fd248-31c9-4633-b3b9-c6adb986cb54"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
